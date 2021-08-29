@@ -10,8 +10,25 @@
 </head>
 
 <body>
-    <h1>Manipulating CSS variables using JS</h1>
-    <img src="" alt="">
+    <div class="container">
+        <h1>Manipulating <span id="h1_text">CSS variables</span> using JS</h1>
+        <div id="padding">
+            <label for="padding_inp">Padding:</label>
+            <input type="range" name="padding_inp" id="padding_inp" value="0" min="0" max="300px" data-suffix="px"
+                data-name="padding">
+        </div>
+        <div id="color">
+            <label for="color_inp">Color:</label>
+            <input type="color" name="color_inp" id="color_inp" data-name="color">
+        </div>
+        <div id="blur">
+            <label for="blur_inp">Blur:</label>
+            <input type="range" name="blur_inp" id="blur_inp" min="0" max="10" data-suffix="px" data-name="blur"
+                value="0">
+        </div>
+        <img id="image" src="https://theawesomeone.com/wp-content/uploads/2021/01/Assassination-Classroom-Season-3.jpg"
+            alt="Assassination Classroom">
+    </div>
     <script src="./script.js"></script>
 </body>
 
